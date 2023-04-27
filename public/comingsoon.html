@@ -34,7 +34,65 @@
   </head>
 
   <body>
-    <div class="popup">
+    <!-- Modal -->
+<div class="modal fade"  id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog fixed-top" id="model-box" >
+    <div class="modal-content" >
+     
+        <div class="popup">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-10">
+                <img src="logo.svg" alt="" />
+                
+              </div>
+              <div class="col-lg-2" id="close-popup">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            </div>
+            <div class="popcontant">
+              <h1>Apply for Eary Access<span class="gradient"> !</span></h1>
+              <p>
+                Our product is currently undergoing fine-tuning and we would greatly
+                appreciate your assistance. Join our Beta program and make a
+                valuable contribution to the future of AI Platforms.
+              </p>
+            </div>
+            <div class="popform">
+              <form>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputtext"
+                    aria-describedby="emailHelp"
+                    placeholder="First Name"
+                  />
+                  
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputtext"
+                    aria-describedby="emailHelp"
+                    placeholder="Email Address"
+                  />
+                </div>
+    
+                <button type="submit" class="btn btn-primary" id="btn-joinbeta">Join Beta</button>
+              </form>
+              <p>By signing up, you agree to our <u>Policy</u> and <u>Terms of Service</u></p>
+            </div>
+          </div>
+        </div>
+        
+     
+     
+    </div>
+  </div>
+</div>
+    <!-- <div class="popup">
       <div class="container">
         <div class="row">
           <div class="col-lg-10">
@@ -79,7 +137,7 @@
           <p>By signing up, you agree to our <u>Policy</u> and <u>Terms of Service</u></p>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- <button onclick="topFunction()" id="nav_top" title="Go to top">Top</button> -->
     <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
       <img src="arrow-up-solid.svg" alt="" width="15px" />
@@ -101,7 +159,7 @@
               >
               for AI Tools & Startups!
             </p>
-            <button class="gradient_button">Request Early Access</button>
+            <button class="gradient_button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Request Early Access</button>
           </div>
           <div class="col-lg-6 d-none d-lg-block">
             <!-- <div class="main_context_img_doted"> -->

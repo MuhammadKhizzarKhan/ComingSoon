@@ -9,6 +9,13 @@ body {
   background-repeat: no-repeat;
   background-position: top, bottom;
 }
+#model-box{
+  /* position: fixed;  */
+  margin-top: 0px;
+  max-width: 100%;
+  height: 100vh;
+  /* justify-content: center; */
+}
 .popup {
   background-image: url("Mask-group.png");
   background-repeat: no-repeat;
@@ -17,6 +24,26 @@ body {
   width: 100%;
   height: 100vh;
   justify-content: center;
+}
+#close-popup{
+  display: flex;
+  margin-top: 20px;
+}
+#close-popup p{
+  font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+color: #121228;
+cursor: pointer;
+}
+
+#close-popup button{
+  font-size: 13px;
+  margin-top: 5px;
+  margin-left: 10px;
+  /* border: 2px solid #121228; */
 }
 
 .popcontant {
@@ -48,8 +75,14 @@ body {
 }
 
 .popform {
-  /* display: block;
-  margin-left: 35%; */
+display: flex;
+justify-content: center;
+align-items: center;
+ 
+}
+.formparagraph p{
+  margin-top: 10px;
+  text-align: center;
 }
 /* .popform input {
   box-sizing: border-box;
